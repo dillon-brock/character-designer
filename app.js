@@ -21,10 +21,14 @@ headSelect.addEventListener('change', () => {
 
 middleSelect.addEventListener('change', () => {
     // *** Complete the middle select change handler
+    character.middle = middleSelect.value;
+    displayDesign();
 });
 
 pantsSelect.addEventListener('change', () => {
     // *** Complete the pants select change handler
+    character.pants = pantsSelect.value;
+    displayDesign();
 });
 
 function displayDesigner() {
