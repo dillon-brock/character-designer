@@ -46,13 +46,19 @@ const phraseInput = addPhraseSection.querySelector('input');
 
 function handleAddPhrase() {
     // *** add the current phrase value to the character phrases
-
+    character.phrases.push(phraseInput.value);
     displayPhrases();
     phraseInput.value = '';
     phraseInput.focus();
 }
 
 // *** Add a click handler to the phrase button that calls handleAddPhrase
+
+const addPhraseButton = addPhraseSection.querySelector('button');
+
+addPhraseButton.addEventListener('click', () => {
+    handleAddPhrase();
+});
 
 phraseInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
