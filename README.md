@@ -1,3 +1,6 @@
+# Planning
+[Miro Board](https://miro.com/app/board/uXjVPXJjpn8=/?share_link_id=619779505372)
+
 # Finish Character Designer
 
 See assignment README for more detail on requirements!
